@@ -12,6 +12,10 @@ public interface DemoInterface {
         throw new RuntimeException("Error thrown through interface logic");
     }
 
+    default String getInterfaceField() {
+        return "field";
+    }
+
     default String getError() {
         return fieldCalculation();
     };
